@@ -1,12 +1,15 @@
 #include <iostream>
 
+// Note: Should be using a namespace; this implementation is purely for oversimplification
 class Node
 {
 public:
     int data = 0;
     Node* prev = nullptr;
     Node* next = nullptr;
-};
+    void insertNext(newData);
+    void insertPrev(newData);
+}
 
 class LinkedList
 {
@@ -25,10 +28,7 @@ public:
         return tail;
     }
 
-    void insertAtStart(int newStartData)
-    {
-        std::cout << "Someone please implement!\n";
-    }
+    void insertAtStart(int newStartData);
 
     void insertAtEnd(int data)
     {
